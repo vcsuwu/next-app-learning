@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Icon from "@mdi/react";
+import { mdiReact, mdiLanguageJavascript, mdiTailwind  } from "@mdi/js";
 
 export default function About() {
   return (
@@ -8,24 +10,9 @@ export default function About() {
       <p>i can pull of good products!</p>
       <h2 className="mt-8 text-4xl font-bold">My tech stack:</h2>
       <div className="mt-10 flex flex-row gap-12">
-        <Image
-          src={"/react_icon.svg"}
-          width={50}
-          height={50}
-          alt="react"
-        ></Image>
-        <Image
-          src={"/react_icon.svg"}
-          width={50}
-          height={50}
-          alt="react"
-        ></Image>
-        <Image
-          src={"/react_icon.svg"}
-          width={50}
-          height={50}
-          alt="react"
-        ></Image>
+        <Icon path={mdiReact} size={3} color="rgb(20 158 202)" />
+        <Icon path={mdiLanguageJavascript} size={3} color="rgb(240 219 79)" />
+        <Icon path={mdiTailwind} size={3} color="rgb(56 189 248)" />
       </div>
     </section>
   );
