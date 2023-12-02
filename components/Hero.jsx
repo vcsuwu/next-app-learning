@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center pt-16">
+    <section className="flex justify-center h-screen flex-col items-center">
       <h2 className="text-center text-3xl font-bold">Eugene</h2>
       <h1 className="mt-2 text-center text-4xl font-bold">
-        A Full-Stack Web Developer
+        A Front-End Web Developer
       </h1>
       <Image
         src={"https://github.com/vcsuwu.png"}
